@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DDTWithDataProvider">
+  <test thread-count="5" name="UserRegistration">
+    <classes>
+      <class name="tests.UserRegistrationTestWithDDTAndDataProvider"/>
+    </classes>
+  </test>
+</suite>

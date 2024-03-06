@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<parameter name="browser" value="chrome"/>
+  <test name="testng" preserve-order="true">
+    <classes>
+      <class name="tests.ContactUsTest"/>
+      <class name="tests.UserRegistrationTest"/>
+      <class name="tests.MyAccountTest"/>
+      <class name="tests.AddProductReviewTest"/>
+      <class name="tests.EmailProductTest"/>
+      <class name="tests.HoverTest"/>
+      <class name="tests.ChangeCurrency"/>
+      <class name="tests.ProductCheckoutTest"/>
+      <class name="tests.CompareProductTest"/>
+      <class name="tests.AddToWishlistTest"/>
+      <class name="tests.AddProductToCartTest"/>
+      <class name="tests.SearchProductTest"/>
+      <class name="tests.SearchProductUsingAutosuggestTest"/>
+    </classes> 
+  </test>
+</suite>
