@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="nop commerce Regression Suite(failed)">
+    <classes>
+      <class name="tests.MyAccountTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanloginWithNewPassword"/>
+          <include name="RegisteredUserCanChangePassword"/>
+          <include name="stopDriver"/>
+        </methods>
+      </class> <!-- tests.MyAccountTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSearchForProduct"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ChangeCurrency">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSearchForProduct"/>
+          <include name="UserCanChangeCurrency"/>
+        </methods>
+      </class> <!-- tests.ChangeCurrency -->
+      <class name="tests.EmailProductTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanEmailProduct"/>
+          <include name="UserSearchForProduct"/>
+          <include name="UserLogin"/>
+          <include name="stopDriver"/>
+          <include name="UserCanlogout"/>
+        </methods>
+      </class> <!-- tests.EmailProductTest -->
+      <class name="tests.AddProductReviewTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="Userlogout"/>
+          <include name="UserLogin"/>
+          <include name="UserSearchForProduct"/>
+          <include name="stopDriver"/>
+          <include name="UserCanAddReview"/>
+        </methods>
+      </class> <!-- tests.AddProductReviewTest -->
+      <class name="tests.ProductCheckoutTest">
+        <methods>
+          <include name="UserCanConfirmOrder"/>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="SearchForProduct"/>
+          <include name="UserCanPrintOrderInvoice"/>
+          <include name="UserCanCheckOutProductAsAGuest"/>
+        </methods>
+      </class> <!-- tests.ProductCheckoutTest -->
+      <class name="tests.AddProductToCartTest">
+        <methods>
+          <include name="UserCanAddProductToCart"/>
+          <include name="startDriver"/>
+          <include name="UserCanUpdateCartQuantity"/>
+          <include name="stopDriver"/>
+          <include name="UserCanRemoveProduct"/>
+        </methods>
+      </class> <!-- tests.AddProductToCartTest -->
+      <class name="tests.AddToWishlistTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="UserCanRemoveProductFromWishlist"/>
+          <include name="stopDriver"/>
+          <include name="UserCanAddProductToWishList"/>
+          <include name="UserCanUpdateQuantity"/>
+          <include name="UserCanSearchWithAutoSuggest"/>
+        </methods>
+      </class> <!-- tests.AddToWishlistTest -->
+      <class name="tests.HoverTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="UserCanSelectHoverMenu"/>
+        </methods>
+      </class> <!-- tests.HoverTest -->
+    </classes>
+  </test> <!-- nop commerce Regression Suite(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,14 @@
+pages\AddProductToCArtPage.class
+pages\UserRegistrationpage.class
+pages\AddProductReviewPage.class
+pages\LoginPage.class
+pages\HomePage.class
+pages\AddToWishlistPage.class
+pages\ContactUsPage.class
+pages\EmailProductPage.class
+pages\ProductCheckoutPage.class
+pages\SearchPage.class
+pages\CompareProductPage.class
+pages\PageBase.class
+pages\ProductDetailPage.class
+pages\MyAccountPage.class

@@ -8,22 +8,26 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.ProductDetailPage;
 import pages.SearchPage;
+import pages.UserRegistrationpage;
 
 public class AddProductReviewTest extends TestBase {
 
 	HomePage homePageObject ;
 	LoginPage loginObject;
-	String email ="udemy19@test.com";
-	String newPassword = "87654321";
+	String email ="udemy1@test.com";
+	String newPassword = "7654321";
+	String password = "123456";
 	String productName = "Apple MacBook Pro 13-inch";
 	SearchPage  searchobject ;
 	ProductDetailPage detailObject ;
 	AddProductReviewPage reviewObject ;
+	UserRegistrationpage registerPageobject;
+	
 	
 		
 		//1- Search product 
 		
-		@Test(priority = 1)
+		@Test(priority = 4)
 		public void UserSearchForProduct() 
 		{
 			searchobject = new SearchPage(driver);
@@ -32,8 +36,33 @@ public class AddProductReviewTest extends TestBase {
 			Assert.assertEquals(detailObject.productNameh1.getText(),(productName));
 		}
 		
-		// 3- Add product review
+		@Test(priority = 1)
+		public void UserCanRegisterSuccessfully() 
+		{
+			homePageObject = new HomePage(driver);
+			homePageObject.openRegistrationPage();
+			registerPageobject = new UserRegistrationpage(driver);
+			registerPageobject.UserRegistration("Mimo", "Nounou", email, password);
+			Assert.assertTrue(registerPageobject.successMessage.getText().equals("Your registration completed"));
+		}
+
 		@Test(priority = 2)
+		public void UseContinueLink() 
+		{
+			registerPageobject = new UserRegistrationpage(driver);
+			registerPageobject.Continue();
+		}
+
+		@Test(priority = 3)
+		public void UserCanLogin() 
+		{
+			homePageObject.openLoginpage();
+			loginObject = new LoginPage(driver);
+			loginObject.UserLogin(email, password);
+		}
+		
+		// 3- Add product review
+		@Test(priority = 5)
 		public void UserCanAddReview() 
 		{
 			detailObject = new ProductDetailPage(driver);
@@ -43,5 +72,4 @@ public class AddProductReviewTest extends TestBase {
 			Assert.assertTrue(reviewObject.successReviewMessage.getText().contains("Product review is successfully added"));
 			System.out.println("The success review message was : "+reviewObject.successReviewMessage.getText());
 		}
-		
 }

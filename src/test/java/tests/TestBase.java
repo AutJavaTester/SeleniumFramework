@@ -11,12 +11,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
+import utilities.Helper;
 
 public class TestBase  extends AbstractTestNGCucumberTests{
 
@@ -89,7 +92,7 @@ public class TestBase  extends AbstractTestNGCucumberTests{
 	
 	//take screenshot when testcase fails and add it to the screenshots folder
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void screenshotOnFailure(ITestResult result) 
 	{
 		if (result.getStatus()== ITestResult.FAILURE) {
@@ -97,6 +100,6 @@ public class TestBase  extends AbstractTestNGCucumberTests{
 			System.out.println("Taking screenshot...");
 			Helper.captureScreenshot(driver, result.getName());
 		}
-	}*/
+	}
 }
 	

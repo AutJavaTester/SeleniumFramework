@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-08T21:08:03 GMT+01:00" name="Regression Suite" finished-at="2023-12-08T21:08:33 GMT+01:00" duration-ms="30731">
+    <groups>
+    </groups>
+    <test started-at="2023-12-08T21:08:03 GMT+01:00" name="testng2" finished-at="2023-12-08T21:08:33 GMT+01:00" duration-ms="30731">
+      <class name="tests.AddProductToCartTest">
+        <test-method signature="UserCanAddProductToCart()[pri:0, instance:tests.AddProductToCartTest@7674f035]" started-at="2023-12-08T21:08:19 GMT+01:00" name="UserCanAddProductToCart" finished-at="2023-12-08T21:08:21 GMT+01:00" duration-ms="2200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanAddProductToCart -->
+        <test-method signature="UserCanUpdateCartQuantity()[pri:0, instance:tests.AddProductToCartTest@7674f035]" started-at="2023-12-08T21:08:21 GMT+01:00" name="UserCanUpdateCartQuantity" finished-at="2023-12-08T21:08:25 GMT+01:00" depends-on-methods="tests.AddProductToCartTest.UserCanAddProductToCart" duration-ms="3585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanUpdateCartQuantity -->
+        <test-method signature="UserCanRemoveProduct()[pri:0, instance:tests.AddProductToCartTest@7674f035]" started-at="2023-12-08T21:08:25 GMT+01:00" name="UserCanRemoveProduct" finished-at="2023-12-08T21:08:27 GMT+01:00" depends-on-methods="tests.AddProductToCartTest.UserCanUpdateCartQuantity" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRemoveProduct -->
+      </class> <!-- tests.AddProductToCartTest -->
+      <class name="tests.SearchProductTest">
+        <test-method signature="UserCanSearchForProduct()[pri:0, instance:tests.SearchProductTest@69e153c5]" started-at="2023-12-08T21:08:27 GMT+01:00" name="UserCanSearchForProduct" finished-at="2023-12-08T21:08:28 GMT+01:00" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProduct -->
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.CompareProductTest">
+        <test-method signature="UserCanCompareProducts()[pri:0, instance:tests.CompareProductTest@470734c3]" started-at="2023-12-08T21:08:06 GMT+01:00" name="UserCanCompareProducts" finished-at="2023-12-08T21:08:12 GMT+01:00" duration-ms="6505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanCompareProducts -->
+        <test-method signature="UserCanRemoveProduct()[pri:0, instance:tests.CompareProductTest@470734c3]" started-at="2023-12-08T21:08:12 GMT+01:00" name="UserCanRemoveProduct" finished-at="2023-12-08T21:08:13 GMT+01:00" depends-on-methods="tests.CompareProductTest.UserCanCompareProducts" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRemoveProduct -->
+        <test-method signature="UserCanClearCompareList()[pri:0, instance:tests.CompareProductTest@470734c3]" started-at="2023-12-08T21:08:13 GMT+01:00" name="UserCanClearCompareList" finished-at="2023-12-08T21:08:14 GMT+01:00" depends-on-methods="tests.CompareProductTest.UserCanRemoveProduct" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanClearCompareList -->
+      </class> <!-- tests.CompareProductTest -->
+      <class name="tests.SearchProductUsingAutosuggestTest">
+        <test-method signature="UserCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchProductUsingAutosuggestTest@173ed316]" started-at="2023-12-08T21:08:28 GMT+01:00" name="UserCanSearchWithAutoSuggest" finished-at="2023-12-08T21:08:33 GMT+01:00" duration-ms="5006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchWithAutoSuggest -->
+      </class> <!-- tests.SearchProductUsingAutosuggestTest -->
+      <class name="tests.AddToWishlistTest">
+        <test-method signature="UserCanSearchWithAutoSuggest()[pri:1, instance:tests.AddToWishlistTest@2cf3d63b]" started-at="2023-12-08T21:08:14 GMT+01:00" name="UserCanSearchWithAutoSuggest" finished-at="2023-12-08T21:08:16 GMT+01:00" duration-ms="1836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchWithAutoSuggest -->
+        <test-method signature="UserCanAddProductToWishList()[pri:2, instance:tests.AddToWishlistTest@2cf3d63b]" started-at="2023-12-08T21:08:16 GMT+01:00" name="UserCanAddProductToWishList" finished-at="2023-12-08T21:08:17 GMT+01:00" duration-ms="1332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanAddProductToWishList -->
+        <test-method signature="UserCanUpdateQuantity()[pri:3, instance:tests.AddToWishlistTest@2cf3d63b]" started-at="2023-12-08T21:08:17 GMT+01:00" name="UserCanUpdateQuantity" finished-at="2023-12-08T21:08:18 GMT+01:00" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanUpdateQuantity -->
+        <test-method signature="UserCanRemoveProductFromWishlist()[pri:4, instance:tests.AddToWishlistTest@2cf3d63b]" started-at="2023-12-08T21:08:18 GMT+01:00" name="UserCanRemoveProductFromWishlist" finished-at="2023-12-08T21:08:19 GMT+01:00" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRemoveProductFromWishlist -->
+      </class> <!-- tests.AddToWishlistTest -->
+      <class name="tests.ChangeCurrency">
+        <test-method signature="UserCanChangeCurrency()[pri:1, instance:tests.ChangeCurrency@4b741d6d]" started-at="2023-12-08T21:08:04 GMT+01:00" name="UserCanChangeCurrency" finished-at="2023-12-08T21:08:04 GMT+01:00" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanChangeCurrency -->
+        <test-method signature="UserCanSearchForProduct()[pri:2, instance:tests.ChangeCurrency@4b741d6d]" started-at="2023-12-08T21:08:04 GMT+01:00" name="UserCanSearchForProduct" finished-at="2023-12-08T21:08:06 GMT+01:00" duration-ms="1153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProduct -->
+      </class> <!-- tests.ChangeCurrency -->
+      <class name="tests.HoverTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.HoverTest@2e8c1c9b]" started-at="2023-12-08T21:07:57 GMT+01:00" name="startDriver" finished-at="2023-12-08T21:08:03 GMT+01:00" duration-ms="5493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="UserCanSelectHoverMenu()[pri:0, instance:tests.HoverTest@2e8c1c9b]" started-at="2023-12-08T21:08:03 GMT+01:00" name="UserCanSelectHoverMenu" finished-at="2023-12-08T21:08:04 GMT+01:00" duration-ms="1427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSelectHoverMenu -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.HoverTest@2e8c1c9b]" started-at="2023-12-08T21:08:33 GMT+01:00" name="stopDriver" finished-at="2023-12-08T21:08:34 GMT+01:00" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.HoverTest -->
+    </test> <!-- testng2 -->
+  </suite> <!-- Regression Suite -->
+</testng-results>
