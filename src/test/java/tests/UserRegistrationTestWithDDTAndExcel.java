@@ -1,7 +1,9 @@
 package tests;
 import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import data.ExcelReader;
 import pages.HomePage;
 import pages.LoginPage;

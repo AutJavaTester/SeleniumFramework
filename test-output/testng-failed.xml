@@ -1,74 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Regression Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="firefox"/>
-  <test thread-count="5" name="testng(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CompareProductTest">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="UserCanClearCompareList"/>
-          <include name="startDriver"/>
-          <include name="UserCanCompareProducts"/>
-          <include name="stopDriver"/>
-          <include name="tearDownClass"/>
-          <include name="UserCanRemoveProduct"/>
-          <include name="screenshotOnFailure"/>
-        </methods>
-      </class> <!-- tests.CompareProductTest -->
-      <class name="tests.AddProductReviewTest">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="startDriver"/>
-          <include name="UserSearchForProduct"/>
-          <include name="UserCanRegisterSuccessfully"/>
-          <include name="UserCanLogin"/>
-          <include name="tearDownClass"/>
-          <include name="stopDriver"/>
-          <include name="screenshotOnFailure"/>
-          <include name="UseContinueLink"/>
-          <include name="UserCanAddReview"/>
-        </methods>
-      </class> <!-- tests.AddProductReviewTest -->
-      <class name="tests.AddToWishlistTest">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="startDriver"/>
-          <include name="UserCanRemoveProductFromWishlist"/>
-          <include name="tearDownClass"/>
-          <include name="stopDriver"/>
-          <include name="UserCanAddProductToWishList"/>
-          <include name="screenshotOnFailure"/>
-          <include name="UserCanUpdateQuantity"/>
-          <include name="UserCanSearchWithAutoSuggest"/>
-        </methods>
-      </class> <!-- tests.AddToWishlistTest -->
-      <class name="tests.ProductCheckoutTest">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="UserCanConfirmOrder"/>
-          <include name="startDriver"/>
-          <include name="stopDriver"/>
-          <include name="tearDownClass"/>
-          <include name="UserCanDownloadInvoicePdf"/>
-          <include name="screenshotOnFailure"/>
-          <include name="SearchForProduct"/>
-          <include name="UserCanPrintOrderInvoice"/>
-          <include name="UserCanCheckOutProductAsAGuest"/>
-        </methods>
-      </class> <!-- tests.ProductCheckoutTest -->
       <class name="tests.AddProductToCartTest">
         <methods>
           <include name="UserCanAddProductToCart"/>
           <include name="setUpClass"/>
           <include name="startDriver"/>
           <include name="UserCanUpdateCartQuantity"/>
-          <include name="UserCanRemoveProduct"/>
-          <include name="tearDownClass"/>
           <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="UserCanRemoveProduct"/>
           <include name="screenshotOnFailure"/>
         </methods>
       </class> <!-- tests.AddProductToCartTest -->
     </classes>
-  </test> <!-- testng(failed) -->
-</suite> <!-- Failed suite [Regression Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
